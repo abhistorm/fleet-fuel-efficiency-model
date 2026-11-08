@@ -1,0 +1,54 @@
+{
+  "id": "053",
+  "slug": "053-fleet-fuel-efficiency-model",
+  "name": "Fleet Fuel Efficiency Model",
+  "domain": "Transportation & mobility",
+  "domain_slug": "mobility",
+  "task_type": "regression",
+  "target": "p053_fleet_fuel_efficiency_model_outcome_value",
+  "features": [
+    "p053_fleet_fuel_efficiency_model_trip_distance_km",
+    "p053_fleet_fuel_efficiency_model_congestion_index",
+    "p053_fleet_fuel_efficiency_model_avg_speed_kmh",
+    "p053_fleet_fuel_efficiency_model_stop_count",
+    "p053_fleet_fuel_efficiency_model_fuel_efficiency",
+    "p053_fleet_fuel_efficiency_model_vehicle_age_years",
+    "p053_fleet_fuel_efficiency_model_rain_intensity",
+    "p053_fleet_fuel_efficiency_model_route_grade_pct",
+    "p053_fleet_fuel_efficiency_model_driver_hours",
+    "p053_fleet_fuel_efficiency_model_passenger_count"
+  ],
+  "model_key": "extra-trees",
+  "model_class": "ExtraTreesRegressor",
+  "serving": "Streamlit",
+  "extension_focus": "Great Expectations data checks",
+  "seed": 202653,
+  "rows": 260429,
+  "dataset_bytes": 24345059,
+  "model_training": {
+    "source": "synthetic dataset bundled with this project",
+    "sample_rows": 5000,
+    "fit_rows": 4000,
+    "holdout_rows": 1000,
+    "metrics": {
+      "mae": 0.9751,
+      "rmse": 1.2624,
+      "r2": 0.8128
+    },
+    "artifact": "models/model.joblib"
+  },
+  "gui_feature": {
+    "mode": "batch",
+    "title": "Fleet Fuel Efficiency · Batch scoring desk",
+    "description": "Score a small CSV batch for Fleet Fuel Efficiency Model using the same fitted model as the single-record form.",
+    "focus_feature": "p053_fleet_fuel_efficiency_model_avg_speed_kmh",
+    "mode_title": "Batch scoring desk"
+  },
+  "gui": {
+    "frontend": "HTML/CSS/JavaScript",
+    "backend": "FastAPI",
+    "standalone": true
+  },
+  "model_artifact": "models/model.joblib",
+  "model_bytes": 15508051
+}

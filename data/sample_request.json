@@ -1,0 +1,14 @@
+{
+  "features": {
+    "p053_fleet_fuel_efficiency_model_trip_distance_km": 0.0,
+    "p053_fleet_fuel_efficiency_model_congestion_index": 0.0,
+    "p053_fleet_fuel_efficiency_model_avg_speed_kmh": 0.0,
+    "p053_fleet_fuel_efficiency_model_stop_count": 0.0,
+    "p053_fleet_fuel_efficiency_model_fuel_efficiency": 0.0,
+    "p053_fleet_fuel_efficiency_model_vehicle_age_years": 0.0,
+    "p053_fleet_fuel_efficiency_model_rain_intensity": 0.0,
+    "p053_fleet_fuel_efficiency_model_route_grade_pct": 0.0,
+    "p053_fleet_fuel_efficiency_model_driver_hours": 0.0,
+    "p053_fleet_fuel_efficiency_model_passenger_count": 0.0
+  }
+}
